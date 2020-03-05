@@ -21,7 +21,7 @@ class HandlerTest{
     }
 
     @Test
-    fun `handle`(){
+    fun `handle - verify mock hit`(){
         val expected = "something other than hello world"
         whenever(service.getHelloWorld()).thenReturn(expected)
 
